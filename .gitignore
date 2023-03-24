@@ -1,3 +1,4 @@
 *.pdf
 /admin
 .DS_Store
+truffle_test/node_modules
