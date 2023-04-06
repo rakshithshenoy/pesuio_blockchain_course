@@ -10,7 +10,7 @@ contract Factory {
     }
 
     CampaignSummary[] public campaigns;
-    address[] public deployedCampaigns;
+    
 
     function createCampaign(uint _minimum, string memory _title) public {
         address newCampaign = address(
