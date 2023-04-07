@@ -7,9 +7,7 @@ import img3 from "./images/img3.jpg";
 function App() {
   return (
     <div className="App">
-      <div className="container main">
-        <p>Hello, welcome to Blockchain class</p>
-        <img src={logo}></img>
+      <div className="container main flex flex-row flex-wrap justify-between items-center">
         <Card
           cardImage={img1}
           title="Mountains"
@@ -28,7 +26,30 @@ function App() {
           description="pink theme"
           price="3000"
         />
-        
+        {/* <Card
+          cardImage={img3}
+          title="people"
+          description="pink theme"
+          price="3000"
+        />
+        <Card
+          cardImage={img3}
+          title="people"
+          description="pink theme"
+          price="3000"
+        />
+        <Card
+          cardImage={img3}
+          title="people"
+          description="pink theme"
+          price="3000"
+        />
+        <Card
+          cardImage={img3}
+          title="people"
+          description="pink theme"
+          price="3000"
+        /> */}
       </div>
     </div>
   );
