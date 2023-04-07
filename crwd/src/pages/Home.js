@@ -4,18 +4,15 @@ import Layout from "../components/Layout";
 import { factoryInstance } from "../ethereum";
 
 export default function Home() {
+
   const [campaigns, setCampaigns] = useState([]);
+
   useEffect(() => {
     const getServerSideProps = async () => {
       console.log();
-      const campaigns = await factoryInstance.methods.getCampaigns().call();
+      const data = await factoryInstance.methods.getCampaigns().call();
 
-      setCampaigns(campaigns);
-      return {
-        props: {
-          campaigns,
-        },
-      };
+      setCampaigns(data);
     };
     getServerSideProps();
   }, []);
